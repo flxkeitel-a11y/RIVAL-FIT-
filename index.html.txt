@@ -1,26 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rival Fit</title>
+    <title>RivalFit | Fitness mit Freunden</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to Rival Fit</h1>
-    <ul>
-        <li>Feature 1</li>
-        <li>Feature 2</li>
-        <li>Feature 3</li>
-    </ul>
-    <table>
-        <tr>
-            <th>Header 1</th>
-            <th>Header 2</th>
-        </tr>
-        <tr>
-            <td>Data 1</td>
-            <td>Data 2</td>
-        </tr>
-    </table>
+    <header>
+        <nav>
+            <div class="logo">RivalFit</div>
+            <ul>
+                <li><a href="#problem">Das Problem</a></li>
+                <li><a href="#loesung">Unsere Lösung</a></li>
+                <li><a href="#business">Geschäftsmodell</a></li>
+                <li><a href="#zielgruppe">Zielgruppe</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Mess dich mit deinen Freunden</h1>
+            <p>Die Fitness-App, die dich durch Wettbewerb motiviert.</p>
+            <a href="#" class="btn">Jetzt starten</a>
+        </div>
+    </header>
+
+    <section id="problem">
+        <h2>Warum Fitness-Apps oft scheitern</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Einsamkeit</h3>
+                <p>Man trainiert oft alleine, was schnell langweilig wird.</p>
+            </div>
+            <div class="card">
+                <h3>Mangelnde Motivation</h3>
+                <p>Ohne Wettbewerb oder Freunde gibt man oft schnell auf.</p>
+            </div>
+            <div class="card">
+                <h3>Komplexität</h3>
+                <p>Viele Apps sind zu kompliziert und unpersönlich gestaltet.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="loesung" class="dark">
+        <h2>Die RivalFit Lösung</h2>
+        <p>RivalFit ist eine Fitness-App, bei der Freunde in sportlichen Challenges direkt gegeneinander antreten.</p>
+        <ul>
+            <li><strong>Tägliche Challenges:</strong> Jeden Tag neue Aufgaben wie Liegestütze oder Laufen, die alle gleichzeitig machen.</li>
+            <li><strong>Ranglisten:</strong> Punkte sammeln und sehen, wer an der Spitze steht.</li>
+            <li><strong>Streaks:</strong> Bleib motiviert durch tägliche Teilnahmen und Gruppen-Belohnungen.</li>
+        </ul>
+    </section>
+
+    <section id="business">
+        <h2>Unser Geschäftsmodell</h2>
+        <p>RivalFit kombiniert eine kostenlose Basis-Version mit einem starken Premium-Modell:</p>
+        <table>
+            <tr>
+                <th>Basis (Kostenlos)</th>
+                <th>Premium (Abo)</th>
+            </tr>
+            <tr>
+                <td>Grundlegende Challenges</td>
+                <td>Zusätzliche Statistiken</td>
+            </tr>
+            <tr>
+                <td>Werbefinanziert</td>
+                <td>Werbefrei</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>Individuelle Trainingsprogramme</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="zielgruppe" class="dark">
+        <h2>Für wen ist RivalFit?</h2>
+        <p>Wir richten uns an Jugendliche und junge Erwachsene zwischen 14 und 30 Jahren.</p>
+        <p>Besonders geeignet für Schüler, Studenten und alle, die Spaß am Wettbewerb über das Smartphone haben.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 RivalFit Project</p>
+    </footer>
 </body>
 </html>
