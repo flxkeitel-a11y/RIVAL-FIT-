@@ -10,7 +10,12 @@
     <header>
         <nav>
             <div class="logo">RivalFit</div>
-            <ul>
+            <button class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#problem">Das Problem</a></li>
                 <li><a href="#loesung">Unsere Lösung</a></li>
                 <li><a href="#business">Geschäftsmodell</a></li>
@@ -84,5 +89,25 @@
     <footer>
         <p>&copy; 2026 RivalFit Project</p>
     </footer>
+
+    <script>
+        // Hamburger Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
